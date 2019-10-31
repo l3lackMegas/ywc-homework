@@ -11,7 +11,7 @@ const Index = props => (
     <div>
         <Head>
             <title>ลงทะเบียนเข้าร่วมมาตรการ ชิมช้อปใช้</title>
-            <link href="/static/css/styles.css" rel="stylesheet" />
+            <link href="./static/css/styles.css" rel="stylesheet" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         </Head>
         <Header data={props.navItem}/>
