@@ -34,6 +34,7 @@ body {
 }
 
 .navBarMobile {
+    display: none;
     position: fixed;
     padding: .5rem 1rem;
     width: 100%;
@@ -479,6 +480,10 @@ body {
 }
 
 @media only screen and (max-width: 761px) {
+    .navBarMobile {
+        display: block;
+    }
+
     .navBar {
         display: none;
     }
