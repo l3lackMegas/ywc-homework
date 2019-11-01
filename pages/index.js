@@ -1,5 +1,6 @@
 import fetch from 'isomorphic-unfetch';
 import Head from 'next/head';
+import HeaderMobile from '../components/HeaderMobile'
 import Header from '../components/Header'
 import Banner from '../components/Banner'
 import ContainerRegister from '../components/ContainerRegister'
@@ -14,7 +15,8 @@ const Index = props => (
             <link href="./static/css/styles.css" rel="stylesheet" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         </Head>
-        <Header data={props.navItem}/>
+        <HeaderMobile data={props.navItem}/>
+        <Header data={props.navItem} />
         <Banner />
         <ContainerRegister data={props.jsonData}/>
         <ContainerDetail data={props.jsonData}/>
@@ -27,7 +29,6 @@ const Index = props => (
 Index.getInitialProps = async function() {
     const res = await fetch('https://panjs.com/ywc.json');
     const data = await res.json();
-  
     return {
         navItem: data.navbarItems,
         jsonData: data,
