@@ -25,11 +25,169 @@
 
 * {
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body { 
     margin: 0;
     font-family: 'TATSanaChon';
+}
+
+.navBarMobile {
+    display: none;
+    position: fixed;
+    padding: .5rem 1rem;
+    width: 100%;
+    min-height: 64px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.navBarMobile .navbar-brand {
+    display: inline-block;
+    width: 35px;
+    height: 48px;
+    padding: 0;
+}
+
+.navBarMobile .navbar-brand img {
+    width: 100%;
+    height: 100%;
+}
+
+#nav-icon1{
+    display: inline-block;
+    float: right;
+    margin: 0 .75rem;
+    width: 30px;
+    height: 24px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#nav-icon1 span {
+    background: #333333;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    display: block;
+    position: absolute;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+    top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+    top: 10px;
+}
+
+#nav-icon1 span:nth-child(3) {
+    top: 20px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+    top: 10px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+    top: 10px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+#mobileMenu {
+    height: 0;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    transition-duration: .35s;
+}
+
+#mobileMenu.open {
+    height: 132px;
+}
+
+#mobileMenu ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#mobileMenu ul li {
+    text-align: right;
+    padding: .5rem 0;
+}
+
+#mobileMenu ul li .aNavMobile {
+    color: rgba(0,0,0,.5);
+    text-decoration: none;
+    background-color: transparent;
+    font-family: 'TATSanaSuksa';
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.navBar {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.navBar ul {
+    margin: 0 auto;
+    padding: 5px 0 0 0;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+}
+
+.navBar li {
+    display: inline-block;
+    padding: 14px 15px;
 }
 
 .aNavbar {
@@ -314,4 +472,156 @@ body {
     font-size: 14px;
     text-decoration: none;
     color: #fff;
+}
+
+@media only screen and (max-width: 761px) {
+    .navBarMobile {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+    }
+
+    .navBar {
+        display: none;
+    }
+
+    .heroImg {
+        height: 221px;
+    }
+
+    .heroImg img {
+        width: 110px;
+    }
+
+    .heroImg.he1 {
+        background: url(https://www.xn--b3caa1e2a7e2b0h2be.com/img/hero_banner/banner-left-s.png) no-repeat;
+    }
+
+    .heroImg.he2 {
+        background: url(https://www.xn--b3caa1e2a7e2b0h2be.com/img/hero_banner/banner-center-s.png) no-repeat;
+    }
+
+    .heroImg.he3 {
+        background: url(https://www.xn--b3caa1e2a7e2b0h2be.com/img/hero_banner/banner-right-s.png) no-repeat;
+    }
+
+    .containerRegister {
+        padding: 0 15px;
+    }
+
+    .containerRegister h1 {
+        font-size: 30px;
+    }
+
+    .containerRegister .btnRegister {
+        padding: 10;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .ContainerDetail .box-contain {
+        padding: 0;
+    }
+
+    .ContainerDetail {
+        padding: 0 30px;
+    }
+
+    .ContainerDetail .box-contain h1 {
+        font-size: 24px;
+    }
+
+    .ContainerDetail .box-contain .detail {
+        font-size: 16px;
+    }
+
+    .BoxTAT {
+        margin: 80px 0px;
+        padding: 0 30px;
+    }
+
+    .BoxKTC {
+        margin: 60px 0px;
+        padding: 0 30px;
+    }
+
+    .BoxTAT .box-detail {
+        display: block;
+        text-align: center;
+    }
+
+    .BoxTAT .box-detail .item img {
+        width: 80%;
+    }
+
+    .BoxKTC .box-detail .imgList {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .BoxKTC .box-detail .imgList a {
+        display: block;
+        width: 33.333%;
+        text-align: center;
+    }
+
+    .BoxKTC .box-detail .imgList img {
+        width: 56px;
+    }
+
+    .Footer .ft1 .box-detail .flexContent .col .logo {
+        width: 145px;
+    }
+
+    .Footer .ft1 .box-detail {
+        padding: 0 30px;
+    }
+
+    .Footer .ft1 .box-detail .flexContent {
+        display: block;
+    }
+
+    .Footer .ft1 {
+        padding: 44px 30px;
+        height: unset;
+    }
+
+    .Footer .ft1 .box-detail .flexContent .col {
+        padding: 0;
+        width: 100%;
+    }
+
+    .Footer .ft2 {
+        height: 160px;
+    }
+
+    .Footer .ft2 .box-detail {
+        padding: 0 30px;
+    }
+
+    .Footer .ft2 .box-detail .flexContent {
+        padding: 0.5rem 2rem;
+        font-size: 12px;
+    }
+
+    .Footer .ft2 .box-detail .flexContent .copyright {
+        font-size: 12px;
+    }
+
+    .Footer .ft2 .box-detail .flexContent ul {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .Footer .ft2 .box-detail .flexContent ul li {
+        width: 100%;
+    }
+
+    .Footer .ft2 .box-detail .flexContent ul li a {
+        padding: 0.5rem 0;
+        font-size: 12px;
+    }
 }
