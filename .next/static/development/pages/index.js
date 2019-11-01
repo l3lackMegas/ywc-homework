@@ -38,6 +38,7 @@ var Header = function Header(props) {
     },
     __self: this
   }, __jsx("img", {
+    alt: "banner",
     src: "https://www.xn--b3caa1e2a7e2b0h2be.com/img/logo/banner.png",
     __source: {
       fileName: _jsxFileName,
@@ -103,6 +104,7 @@ var BoxKTC = function BoxKTC(props) {
     },
     __self: this
   }, __jsx("img", {
+    alt: "MOF",
     src: "https://www.xn--b3caa1e2a7e2b0h2be.com/img/brand-logo/MOF.png",
     __source: {
       fileName: _jsxFileName,
@@ -117,6 +119,7 @@ var BoxKTC = function BoxKTC(props) {
     },
     __self: this
   }, __jsx("img", {
+    alt: "FPO",
     src: "https://www.xn--b3caa1e2a7e2b0h2be.com/img/brand-logo/FPO.png",
     __source: {
       fileName: _jsxFileName,
@@ -131,6 +134,7 @@ var BoxKTC = function BoxKTC(props) {
     },
     __self: this
   }, __jsx("img", {
+    alt: "CGD",
     src: "https://www.xn--b3caa1e2a7e2b0h2be.com/img/brand-logo/CGD.png",
     __source: {
       fileName: _jsxFileName,
@@ -145,6 +149,7 @@ var BoxKTC = function BoxKTC(props) {
     },
     __self: this
   }, __jsx("img", {
+    alt: "Krungthai",
     src: "https://www.xn--b3caa1e2a7e2b0h2be.com/img/brand-logo/Krungthai.png",
     __source: {
       fileName: _jsxFileName,
@@ -159,6 +164,7 @@ var BoxKTC = function BoxKTC(props) {
     },
     __self: this
   }, __jsx("img", {
+    alt: "MOTS",
     src: "https://www.xn--b3caa1e2a7e2b0h2be.com/img/brand-logo/MOTS.png",
     __source: {
       fileName: _jsxFileName,
@@ -173,6 +179,7 @@ var BoxKTC = function BoxKTC(props) {
     },
     __self: this
   }, __jsx("img", {
+    alt: "TAT",
     src: "https://www.xn--b3caa1e2a7e2b0h2be.com/img/brand-logo/TAT.png",
     __source: {
       fileName: _jsxFileName,
@@ -231,6 +238,7 @@ var BoxTAT = function BoxTAT(props) {
     },
     __self: this
   }, __jsx("img", {
+    alt: "SQ",
     src: "https://www.xn--b3caa1e2a7e2b0h2be.com/img/Banner_KTB_SQ.png",
     __source: {
       fileName: _jsxFileName,
@@ -252,6 +260,7 @@ var BoxTAT = function BoxTAT(props) {
     },
     __self: this
   }, __jsx("img", {
+    alt: "CGD",
     src: "https://www.xn--b3caa1e2a7e2b0h2be.com/img/Banner_CGD_Sq.png",
     __source: {
       fileName: _jsxFileName,
@@ -273,6 +282,7 @@ var BoxTAT = function BoxTAT(props) {
     },
     __self: this
   }, __jsx("img", {
+    alt: "HOTLINE",
     src: "https://www.xn--b3caa1e2a7e2b0h2be.com/img/Banner_TAT_Hotline_Sq.png",
     __source: {
       fileName: _jsxFileName,
@@ -6054,57 +6064,65 @@ var Index = function Index(props) {
       lineNumber: 16
     },
     __self: this
-  })), __jsx(_components_HeaderMobile__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    data: props.navItem,
+  }), __jsx("meta", {
+    name: "description",
+    content: "This page is create for YWC's homework.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 17
     },
     __self: this
-  }), __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  })), __jsx(_components_HeaderMobile__WEBPACK_IMPORTED_MODULE_5__["default"], {
     data: props.navItem,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19
     },
     __self: this
-  }), __jsx(_components_Banner__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }), __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    data: props.navItem,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20
+    },
+    __self: this
+  }), __jsx(_components_Banner__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
     },
     __self: this
   }), __jsx(_components_ContainerRegister__WEBPACK_IMPORTED_MODULE_8__["default"], {
     data: props.jsonData,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 22
     },
     __self: this
   }), __jsx(_components_ContainerDetail__WEBPACK_IMPORTED_MODULE_9__["default"], {
     data: props.jsonData,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 23
     },
     __self: this
   }), __jsx(_components_BoxTAT__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 24
     },
     __self: this
   }), __jsx(_components_BoxKTC__WEBPACK_IMPORTED_MODULE_11__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 25
     },
     __self: this
   }), __jsx(_components_Footer__WEBPACK_IMPORTED_MODULE_12__["default"], {
     data: props.navItem,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 26
     },
     __self: this
   }));
